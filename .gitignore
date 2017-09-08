@@ -1,0 +1,5 @@
+deactivate
+*.log
+.vscode
+/user_uploads
+*.pyc

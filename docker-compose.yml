@@ -1,0 +1,13 @@
+ version: '2'
+ services:
+   db:
+     image: postgres
+   web:
+     build: .
+     command: ./start.sh
+     volumes:
+       - .:/usr/src/app
+     ports:
+       - "80:80"
+     depends_on:
+       - db
